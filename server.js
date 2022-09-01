@@ -42,7 +42,7 @@ fs.readFile(fileName, (err, data) => {
 const server = http.createServer((req, res) => {
 	res.statusCode = 200
 	res.setHeader('Content-Type', 'text/html')
-	res.end(console.log(data))
+	res.end(date)
 })
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
