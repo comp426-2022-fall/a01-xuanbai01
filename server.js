@@ -22,6 +22,7 @@ fs.readFile(fileName, (err, data) => {
 	console.error(err)
 	return
   }
+  console.log(data)
 
   const server = http.createServer((req, res) => {
         res.statusCode = 200
