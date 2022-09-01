@@ -27,7 +27,7 @@ fs.readFile(fileName, (err, data) => {
   const server = http.createServer((req, res) => {
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html')
-        res.end(console.log(data))
+        res.end(data)
   })
 
   server.listen(port, () => {
